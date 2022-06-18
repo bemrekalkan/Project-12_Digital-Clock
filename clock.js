@@ -25,7 +25,7 @@ function currentTime() {
   let time = hh + ":" + mm + ":" + ss + " " + session;
 
   clock.innerText = time;
-  let t = setTimeout(function () {
+  let t = setInterval(function () {
     currentTime();
   }, 1000);
 }
